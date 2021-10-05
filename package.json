@@ -1,0 +1,29 @@
+{
+  "name": "maket",
+  "version": "1.0.0",
+  "description": "scss_test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/style.scss:css/style.css --watch",
+    "compile": "sass scss/style.scss:css/style.css",
+    "prefix": "postcss --use autoprefixer -o css/style.css css/style.css",
+    "minify": "cleancss --source-map --source-map-inline-sources --output css/style.min.css css/style.css",
+    "build": "npm run compile && npm run prefix && npm run minify"
+  },
+  "browserslist": [
+    "last 4 version"
+  ],
+  "author": "Volodymyr",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "browserlist": "^1.0.1",
+    "browserslist": "^4.16.3",
+    "clean-css-cli": "^5.2.1",
+    "normalize-scss": "^7.0.1",
+    "postcss": "^8.2.7",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8"
+  }
+}
