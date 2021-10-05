@@ -1,0 +1,143 @@
+.main {
+  background    : linear-gradient(175deg, #df6186, #df6186 50%, #90d6be 50%, #90d6be);
+  padding-top   : 92px;
+  padding-bottom: 118px;
+
+  //===== AGENDA =========
+  .agenda {
+    &__title {
+      color         : #ffffff;
+      font-family   : $robotoB;
+      font-size     : 80px;
+      font-weight   : 400;
+      line-height   : 105.18px;
+      text-align    : left;
+      text-transform: uppercase;
+      letter-spacing: 16px;
+      text-align    : center;
+      margin-bottom : 91px;
+    }
+
+    &__cards {
+      display  : flex;
+      flex-wrap: wrap;
+
+
+
+      p {
+        color      : #3d3935;
+        font-family: $roboto;
+        font-size  : 16px;
+        font-weight: 500;
+        text-align : left;
+      }
+
+    }
+
+    .card-title {
+      color         : #363b34;
+      font-family   : $robotoB;
+      font-size     : 36px;
+      font-weight   : 400;
+      line-height   : 105.18px;
+      text-align    : center;
+      text-transform: uppercase;
+      margin        : 0;
+    }
+
+    .paragrafe {
+      display        : flex;
+      justify-content: justify;
+      align-items    : center;
+      margin         : 0;
+    }
+
+    .img {
+      margin-right: 12px;
+    }
+
+    &-card1 {
+      height          : 558px;
+      box-shadow      : 4px 4px 5px 1px rgba(0, 0, 0, 0.29);
+      border-radius   : 10px;
+      background-color: #90d6be;
+      padding         : 0 23px 0 46px;
+      flex            : 0 1 27%;
+    }
+
+    &-card2 {
+      height          : 558px;
+      box-shadow      : 4px 4px 5px 1px rgba(0, 0, 0, 0.29);
+      border-radius   : 10px;
+      background-color: #479fdf;
+      margin          : 0 30px;
+      flex            : 0 1 20%;
+    }
+
+    &-card3 {
+      height          : 558px;
+      box-shadow      : 4px 4px 5px 1px rgba(0, 0, 0, 0.29);
+      border-radius   : 10px;
+      background-color: #f1b928;
+      flex            : 0 1 55%;
+    }
+  }
+
+  //======================
+
+  //======== FORM =========
+  .form {
+
+    &__title {
+      color         : #ffffff;
+      font-family   : $robotoB;
+      font-size     : 80px;
+      font-weight   : 400;
+      text-align    : left;
+      text-transform: uppercase;
+      margin-top    : 180px;
+      margin-bottom : 91px;
+      text-align    : center;
+    }
+
+    .mainFields {
+      color          : #999999;
+      font-family    : $roboto;
+      font-size      : 24px;
+      font-weight    : 500;
+      text-align     : left;
+      text-transform : uppercase;
+      display        : flex;
+      justify-content: space-around;
+      align-items    : center;
+      flex-wrap      : wrap;
+
+
+      .name,
+      .email,
+      .select {
+        flex            : 1 1 30%;
+        border-radius   : 10px;
+        background-color: #ffffff;
+        color           : #7c6378;
+        font-family     : $roboto;
+        font-size       : 24px;
+        font-weight     : 500;
+        text-align      : left;
+        text-transform  : uppercase;
+      }
+    }
+
+    &__columns {
+      display        : flex;
+      justify-content: space-between;
+
+      .que:nth-child(even) {
+        margin: 55px 0;
+      }
+    }
+  }
+
+  //================================
+
+}
