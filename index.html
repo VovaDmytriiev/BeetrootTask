@@ -33,10 +33,10 @@
           </div>
           <div class="menu__body">
             <ul class="menu__list">
-              <li><a href="#" class="menu__item">about</a></li>
-              <li><a href="#" class="menu__item">agenda</a></li>
-              <li><a href="#" class="menu__item">participation form</a></li>
-              <li><a href="#" class="menu__item">how to find us</a></li>
+              <li><a data-goto=".block-welcome" href="#" class="menu__item">about</a></li>
+              <li><a data-goto=".block-agenda" href="#" class="menu__item">agenda</a></li>
+              <li><a data-goto=".block-form" href="#" class="menu__item">participation form</a></li>
+              <li><a data-goto=".block-map" href="#" class="menu__item">how to find us</a></li>
             </ul>
           </div>
         </nav>
@@ -45,7 +45,7 @@
     <!-------------------->
 
     <!------ WELCOME -------->
-    <section class="welcome">
+    <section class="welcome block-welcome">
       <div class="container">
         <div class="welcome__title anim-items">Welcome</div>
         <div class="welcome__subtitle anim-items">to the new beetroot home</div>
@@ -61,7 +61,7 @@
     <main class="main">
       <div class="container">
         <!------ AGENDA -------->
-        <section class="agenda">
+        <section class="agenda block-agenda">
           <div class="agenda__title anim-items">AGENDA</div>
           <div class="agenda__cards ">
             <div class="agenda-card1 anim-items">
@@ -180,14 +180,14 @@
         <!---------------------->
 
         <!------ FORM -------->
-        <section class="form">
+        <section class="form block-form">
           <div class="form__title anim-items">PARTICIPATION FORM</div>
-          <div class="row">
+          <div class="row  anim-items">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Your NAME" aria-label="Your NAME">
+              <input type="text" class="form-control" placeholder="Your NAME">
             </div>
             <div class="col">
-              <input type="text" class="form-control" id="email" placeholder="EMAIL" aria-label="EMAIL">
+              <input type="text" class="form-control" id="email" placeholder="EMAIL">
               <h6 id="result"></h6>
             </div>
             <div class="col">
@@ -198,7 +198,7 @@
               </select>
             </div>
           </div>
-          <div class="columns">
+          <div class="columns  anim-items">
             <div class="first-column">
               <div class="row column1">
                 <div class="col">
@@ -230,10 +230,11 @@
     <!------  END MAIN  --------->
 
     <!------ Map -------->
-    <section class="map">
+    <section class="map block-map">
       <div class="container">
         <div class="map__title anim-items">how to find us</div>
       </div>
+      <!-- <div id="map"></div> -->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5021.465117014101!2d24.700462683760456!3d48.91744633568713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1633446992185!5m2!1sru!2sua"
         class="map"></iframe>
@@ -254,6 +255,9 @@
   </script>
   <script src="js/script.js"></script>
   <script src="js/validationForm.js"></script>
+  <!-- <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ3oVNs2JMIkNi1YGkj1Q4EI9B2Q-ZVGo&callback=initMap&v=weekly"
+    async></script> -->
 
   <!-------------------->
 </body>

@@ -1,13 +1,44 @@
-//======================           BURGER           ==========================================
+//======================           BURGER           ====================================================
 $("document").ready(function () {
   $(".burger").click(function (event) {
     $(".burger, .menu__list").toggleClass("active");
     $("body").toggleClass("lock-scroll");
   });
 });
-//============================================================================================
+//======================================================================================================
+//======================          SMOOTH SCROLL            =============================================
+//We are looking for menu items who have atribute data-goto
+const menuItems = document.querySelectorAll(".menu__item[data-goto]");
+//Check if such elements exist
+if (menuItems.length > 0) {
+  //We hang on the click listener menu
+  menuItems.forEach((menuItem) => {
+    menuItem.addEventListener("click", onMenuItemClick);
+  });
+  function onMenuItemClick(e) {
+    //Get the click value
+    const menuItem = e.target;
+    if (
+      //We check if there is something and whether the object we are referring to exists
+      menuItem.dataset.goto &&
+      document.querySelector(menuItem.dataset.goto)
+    ) {
+      const gotoBlock = document.querySelector(menuItem.dataset.goto);
+      //We are looking at what height relative to the top is the block to which you need to go down
+      const gotoBlockValue =
+        gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector("header").offsetHeight;
+      //Scroll
+      window.scrollTo({
+        top: gotoBlockValue,
+        behavior: "smooth",
+      });
+      e.preventDefault();
+    }
+  }
+}
+//======================================================================================================
 
-//======================           SCROLL ANIMATION            ==========================================
+//======================           SCROLL ANIMATION            =========================================
 // looking for elements that will be animated
 const animItems = document.querySelectorAll(".anim-items");
 //Check if such elements exist
@@ -59,4 +90,14 @@ if (animItems.length > 0) {
   }, 300);
 }
 //============================================================================================
+//==============================      MAP    =================================================
 
+// let map;
+
+// function initMap() {
+//   map = new google.maps.Map(document.getElementById("map"), {
+//     center: { lat: -34.397, lng: 150.644 },
+//     zoom: 8,
+//   });
+// }
+//============================================================================================
