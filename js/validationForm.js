@@ -8,10 +8,7 @@ function validate() {
   const email = $("#email").val();
   $result.text("");
 
-  if (validateEmail(email)) {
-    $result.text(email + " is valid :)");
-    $result.css("color", "green");
-  } else {
+  if (!validateEmail(email)) {
     $result.text("please enter correct e-mail");
     $result.css("color", "red");
   }

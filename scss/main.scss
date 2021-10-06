@@ -1,6 +1,5 @@
 .main {
   background    : linear-gradient(175deg, #df6186, #df6186 50%, #90d6be 50%, #90d6be);
-  padding-top   : 92px;
   padding-bottom: 118px;
 
   //===== AGENDA =========
@@ -15,14 +14,14 @@
       text-transform: uppercase;
       letter-spacing: 16px;
       text-align    : center;
+      padding-top   : 92px;
       margin-bottom : 91px;
     }
 
     &__cards {
-      display  : flex;
-      flex-wrap: wrap;
-
-
+      display        : flex;
+      justify-content: center;
+      flex-wrap      : wrap;
 
       p {
         color      : #3d3935;
@@ -46,10 +45,9 @@
     }
 
     .paragrafe {
-      display        : flex;
-      justify-content: justify;
-      align-items    : center;
-      margin         : 0;
+      display    : flex;
+      align-items: center;
+      margin     : 0;
     }
 
     .img {
@@ -57,29 +55,29 @@
     }
 
     &-card1 {
-      height          : 558px;
       box-shadow      : 4px 4px 5px 1px rgba(0, 0, 0, 0.29);
       border-radius   : 10px;
       background-color: #90d6be;
-      padding         : 0 23px 0 46px;
-      flex            : 0 1 27%;
+      padding         : 0 23px 88px;
+      flex            : 0 1 26%;
     }
 
     &-card2 {
-      height          : 558px;
       box-shadow      : 4px 4px 5px 1px rgba(0, 0, 0, 0.29);
       border-radius   : 10px;
       background-color: #479fdf;
+      padding-left    : 46px;
+      padding         : 0 26px 88px;
+      flex            : 0 1 27%;
       margin          : 0 30px;
-      flex            : 0 1 20%;
     }
 
     &-card3 {
-      height          : 558px;
       box-shadow      : 4px 4px 5px 1px rgba(0, 0, 0, 0.29);
       border-radius   : 10px;
       background-color: #f1b928;
-      flex            : 0 1 55%;
+      padding         : 0 26px 88px;
+      flex            : 1 1 40%;
     }
   }
 
@@ -87,6 +85,7 @@
 
   //======== FORM =========
   .form {
+    margin: 0 15px;
 
     &__title {
       color         : #ffffff;
@@ -97,26 +96,26 @@
       text-transform: uppercase;
       margin-top    : 180px;
       margin-bottom : 91px;
+      letter-spacing: 16px;
       text-align    : center;
     }
 
-    .mainFields {
-      color          : #999999;
-      font-family    : $roboto;
-      font-size      : 24px;
-      font-weight    : 500;
-      text-align     : left;
-      text-transform : uppercase;
-      display        : flex;
-      justify-content: space-around;
-      align-items    : center;
-      flex-wrap      : wrap;
+    .result {
+      color         : #cc0000;
+      font-family   : $roboto;
+      font-size     : 16px;
+      font-weight   : 500;
+      line-height   : 105.18px;
+      text-align    : left;
+      text-transform: uppercase;
+    }
 
+    .row {
+      padding: 0 15px;
 
-      .name,
-      .email,
-      .select {
-        flex            : 1 1 30%;
+      .form-control,
+      .form-select {
+        height          : 103px;
         border-radius   : 10px;
         background-color: #ffffff;
         color           : #7c6378;
@@ -128,13 +127,67 @@
       }
     }
 
-    &__columns {
+    .columns {
       display        : flex;
+      flex-wrap      : wrap;
       justify-content: space-between;
+      flex           : 1 1 auto;
+      margin         : 55px 0;
+    }
 
-      .que:nth-child(even) {
+    .first-column,
+    .secomd-column {
+      width: 48%;
+    }
+
+    .column1 {
+      display       : flex;
+      flex-direction: column;
+
+      .col:nth-child(even) {
         margin: 55px 0;
       }
+    }
+
+    .column2 {
+      display       : flex;
+      flex-direction: column;
+    }
+
+    .textarea {
+      width           : 100%;
+      height          : 265px;
+      border-radius   : 10px;
+      border          : 2px solid #cccccc;
+      background-color: #ffffff;
+      resize          : none;
+      padding         : 33px;
+    }
+
+    .btn {
+      width           : 100%;
+      height          : 103px;
+      border-radius   : 10px;
+      border          : 2px solid #cccccc;
+      background-color: #e06287;
+      margin-top      : 55px;
+      color           : #fff;
+      font-family     : $roboto;
+      font-size       : 24px;
+      font-weight     : 500;
+      line-height     : 105.18px;
+      text-align      : left;
+      text-transform  : uppercase;
+      text-align      : center;
+      outline         : none;
+    }
+
+    .btn:hover {
+      background-color: #a51440;
+    }
+
+    .btn:active {
+      background-color: #53051d;
     }
   }
 
