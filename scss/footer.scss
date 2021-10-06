@@ -1,21 +1,20 @@
+@import "_mixins.scss";
+
 .footer {
   background-color: #f1b928;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  margin          : 0 auto;
 
-  .container {
-    width          : 1440px;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    margin         : 0 auto;
-
-    .copyright {
-      color         : #fffefe;
-      font-family   : $roboto;
-      font-size     : 24px;
-      font-weight   : 500;
-      line-height   : 105px;
-      text-transform: uppercase;
-      margin        : 70px 0;
-    }
+  .copyright {
+    color      : #fffefe;
+    font-family: $roboto;
+    @include adaptiv-font(24, 18);
+    font-weight   : 500;
+    line-height   : 105px;
+    text-transform: uppercase;
+    margin        : 70px 0;
   }
+
 }

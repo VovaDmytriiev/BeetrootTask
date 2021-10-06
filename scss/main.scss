@@ -1,3 +1,5 @@
+@import "_mixins.scss";
+
 .main {
   background    : linear-gradient(175deg, #df6186, #df6186 50%, #90d6be 50%, #90d6be);
   padding-bottom: 118px;
@@ -5,9 +7,9 @@
   //===== AGENDA =========
   .agenda {
     &__title {
-      color         : #ffffff;
-      font-family   : $robotoB;
-      font-size     : 80px;
+      color      : #ffffff;
+      font-family: $robotoB;
+      @include adaptiv-font(80, 48);
       font-weight   : 400;
       line-height   : 105.18px;
       text-align    : left;

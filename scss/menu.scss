@@ -8,7 +8,6 @@
     }
 
     &__item {
-      margin-left    : 36px;
       color          : #7d6378;
       font-family    : $roboto;
       font-size      : 32px;
@@ -43,25 +42,25 @@
       &__list.active {
         display         : flex;
         flex-direction  : column;
-        justify-content : center;
-        align-items     : center;
+        text-align      : center;
         top             : 0;
+        width           : 100vw;
         height          : 100%;
         font-size       : 60px;
         background-color: rgba(51, 51, 51, 0.9);
-        overflow        : auto;
+        overflow        : hidden;
         padding-bottom  : 0;
         z-index         : 4;
 
         @media(max-width: 420px) {
-          top: 160px;
+          top: 0;
         }
 
       }
 
       &__list.active a {
         padding-bottom: 0;
-        font-size     : 40px;
+        font-size     : 45px;
       }
     }
   }

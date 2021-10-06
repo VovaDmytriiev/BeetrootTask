@@ -66,10 +66,17 @@ body {
   margin: 0 auto;
   justify-content: space-between;
 }
-.header .container .logo {
+.header .container .logo img {
   width: 238px;
   height: 96px;
   margin: 44px 0;
+}
+@media (max-width: 420px) {
+  .header .container .logo img {
+    width: 200px;
+    height: 75px;
+    margin: 15px 0;
+  }
 }
 
 .header::after {
@@ -87,7 +94,7 @@ body {
 .main .agenda__title {
   color: #ffffff;
   font-family: "Roboto-Black", "Roboto", sans-serif;
-  font-size: 80px;
+  font-size: calc(48px + 32 * ((100vw - 320px) / 1600));
   font-weight: 400;
   line-height: 105.18px;
   text-align: left;
@@ -246,18 +253,15 @@ body {
 
 .footer {
   background-color: #f1b928;
-}
-.footer .container {
-  width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-.footer .container .copyright {
+.footer .copyright {
   color: #fffefe;
   font-family: "Roboto-Regular", "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: calc(18px + 6 * ((100vw - 320px) / 1600));
   font-weight: 500;
   line-height: 105px;
   text-transform: uppercase;
@@ -312,7 +316,7 @@ body {
 
   .burger.active::after {
     transform: rotate(-45deg);
-    bottom: 20px;
+    bottom: 22px;
   }
 
   .burger.active span {
@@ -325,7 +329,6 @@ body {
   flex-wrap: wrap;
 }
 .header__menu .menu__item {
-  margin-left: 36px;
   color: #7d6378;
   font-family: "Roboto-Regular", "Roboto", sans-serif;
   font-size: 32px;
@@ -357,26 +360,26 @@ body {
   .header__menu .menu__list.active {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     top: 0;
+    width: 100vw;
     height: 100%;
     font-size: 60px;
     background-color: rgba(51, 51, 51, 0.9);
-    overflow: auto;
+    overflow: hidden;
     padding-bottom: 0;
     z-index: 4;
   }
 }
 @media (max-width: 1000px) and (max-width: 420px) {
   .header__menu .menu__list.active {
-    top: 160px;
+    top: 0;
   }
 }
 @media (max-width: 1000px) {
   .header__menu .menu__list.active a {
     padding-bottom: 0;
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
@@ -399,20 +402,41 @@ body {
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.29);
   color: #ffffff;
   font-family: "Roboto-Black", "Roboto", sans-serif;
-  font-size: 119px;
+  font-size: calc(60px + 59 * ((100vw - 320px) / 1600));
   font-weight: 400;
   letter-spacing: 72px;
   text-transform: uppercase;
   padding-left: 85px;
   padding-top: 179px;
 }
+@media (max-width: 1180px) {
+  .welcome__title {
+    letter-spacing: 50px;
+    padding-left: 0;
+  }
+}
+@media (max-width: 750px) {
+  .welcome__title {
+    letter-spacing: 25px;
+  }
+}
+@media (max-width: 520px) {
+  .welcome__title {
+    letter-spacing: 0;
+  }
+}
 .welcome__subtitle {
   color: #ffffff;
   font-family: "Roboto-Light", "Roboto", sans-serif;
-  font-size: 71px;
+  font-size: calc(35px + 36 * ((100vw - 320px) / 1600));
   font-weight: 300;
   line-height: 104px;
   text-transform: uppercase;
+}
+@media (max-width: 520px) {
+  .welcome__subtitle {
+    line-height: 40px;
+  }
 }
 .welcome__location {
   display: flex;
@@ -423,12 +447,17 @@ body {
 .welcome__location .location-text {
   color: #ffffff;
   font-family: "Roboto-Black", "Roboto", sans-serif;
-  font-size: 48px;
+  font-size: calc(25px + 23 * ((100vw - 320px) / 1600));
   font-weight: 400;
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5.76px;
+}
+@media (max-width: 520px) {
+  .welcome__location .location-text {
+    line-height: 30px;
+  }
 }
 
 .map {
@@ -454,6 +483,10 @@ body {
   top: 71px;
   left: 289px;
   z-index: 2;
+}
+
+.lock-scroll {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
