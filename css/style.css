@@ -404,6 +404,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.header__menu .menu__list li {
+  margin-left: 36px;
+}
 .header__menu .menu__item {
   color: #7d6378;
   font-family: "Roboto-Regular", "Roboto", sans-serif;
