@@ -1,0 +1,110 @@
+//===== WELCOME =================================================================
+.welcome__title {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.welcome__title._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+.welcome__subtitle {
+  transform : translate(-200%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.welcome__subtitle._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+.welcome__location {
+  transform : translate(200%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.welcome__location._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+//===== AGENDA =================================================================
+.agenda__title {
+  transform: scale(0);
+}
+
+.agenda__title._active {
+  transform : scale(1);
+  transition: all .8s ease .3s;
+}
+
+.agenda-card1 {
+  transform : translate(-200%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0.6s;
+}
+
+.agenda-card1._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+.agenda-card2 {
+  transform : translate(-200%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0.3s;
+}
+
+.agenda-card2._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+.agenda-card3 {
+  transform : translate(-200%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.agenda-card3._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+//===== FORM =================================================================
+.form__title {
+  transform : translate(0, -120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.form__title._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+//===== MAP =================================================================
+.map__title {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.map__title._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.6s;
+}
+
+.copyright {
+  transform: scale(0);
+}
+
+.copyright._active {
+  transform : scale(1);
+  transition: all .8s ease .3s;
+}
