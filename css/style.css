@@ -505,6 +505,11 @@ body {
   text-transform: uppercase;
   margin: 70px 0;
 }
+@media (max-width: 576px) {
+  .footer .copyright {
+    font-size: 20px;
+  }
+}
 
 .welcome__title {
   transform: translate(0, 120%);
@@ -517,13 +522,13 @@ body {
   opacity: 1;
 }
 
-.welcome__subtitle {
+.welcome__suptitle {
   transform: translate(-200%, 0);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
 
-.welcome__subtitle._active {
+.welcome__suptitle._active {
   transform: translate(0, 0);
   opacity: 1;
 }
@@ -548,35 +553,35 @@ body {
   transition: all 0.8s ease 0.3s;
 }
 
-.agenda-card1 {
+.card-first {
   transform: translate(-200%, 0);
   opacity: 0;
   transition: all 0.8s ease 0.6s;
 }
 
-.agenda-card1._active {
+.card-first._active {
   transform: translate(0, 0);
   opacity: 1;
 }
 
-.agenda-card2 {
+.card-second {
   transform: translate(-200%, 0);
   opacity: 0;
   transition: all 0.8s ease 0.3s;
 }
 
-.agenda-card2._active {
+.card-second._active {
   transform: translate(0, 0);
   opacity: 1;
 }
 
-.agenda-card3 {
+.card-party {
   transform: translate(-200%, 0);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
 
-.agenda-card3._active {
+.card-party._active {
   transform: translate(0, 0);
   opacity: 1;
 }
@@ -588,6 +593,100 @@ body {
 }
 
 .form__title._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.name {
+  transform: translate(-200%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0.6s;
+}
+
+.name._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.email {
+  transform: translate(-200%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0.3s;
+}
+
+.email._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.select {
+  transform: translate(-200%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.select._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.card-first {
+  transform: translate(-200%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0.6s;
+}
+
+.que1 {
+  transform: translate(-200%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.que1._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.que2 {
+  transform: translate(-200%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0.3s;
+}
+
+.que2._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.que3 {
+  transform: translate(-200%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0.6s;
+}
+
+.que3._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.text {
+  transform: translate(200%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0.3s;
+}
+
+.text._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.btnn {
+  transform: translate(200%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0.6s;
+}
+
+.btnn._active {
   transform: translate(0, 0);
   opacity: 1;
 }
