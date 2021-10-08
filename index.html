@@ -10,8 +10,9 @@
 
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize-opentype.css/0.2.3/normalize-opentype.min.css" />
-  <link rel="stylesheet" href="/css/style.min.css" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="css/iconFont.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -19,179 +20,115 @@
 </head>
 
 <body>
-  <div class="wrapper">
-
-    <!----  HEADER   ----->
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <img src="./images/Beetroot_Logo.png" alt="Logo">
+  <!------ HEADER -------->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__body">
+        <a href="https://beetroot.se/" class="header__logo">
+          <img src="images/Beetroot_Logo.png" alt="Logo">
+        </a>
+        <div class="header__burger">
+          <span></span>
         </div>
         <nav class="header__menu">
-          <div class="burger">
-            <span></span>
-          </div>
-          <div class="menu__body">
-            <ul class="menu__list">
-              <li><a href="#" class="menu__item">about</a></li>
-              <li><a href="#" class="menu__item">agenda</a></li>
-              <li><a href="#" class="menu__item">participation form</a></li>
-              <li><a href="#" class="menu__item">how to find us</a></li>
-            </ul>
-          </div>
+          <ul class="header__list">
+            <li><a data-goto=".block-welcome" href="#" class="header__link">about</a></li>
+            <li><a data-goto=".block-agenda" href="#" class="header__link">agenda</a></li>
+            <li><a data-goto=".block-form" href="#" class="header__link">participation form</a></li>
+            <li><a data-goto=".block-map" href="#" class="header__link">how to find us</a></li>
+          </ul>
         </nav>
       </div>
-    </header>
-    <!-------------------->
+    </div>
+  </header>
+  <!-------------------->
 
-    <!------ WELCOME -------->
-    <section class="welcome">
-      <div class="container">
-        <div class="welcome__title">Welcome</div>
-        <div class="welcome__subtitle">to the new beetroot home</div>
-        <div class="welcome__location">
-          <img src="./images/map__pin__location__pointer__marker-512.png" alt="location" class="location-pin">
-          <div class="location-text">ivano-frankivsk</div>
+  <!------ WELCOME -------->
+  <aside class="welcome block-welcome">
+    <div class="wrapper">
+      <div class="welcome__inner">
+        <h1 class="anim-items">welcome</h1>
+        <h2 class="anim-items">to the new beetroot home</h2>
+        <div class="welcome__location anim-items">
+          <p class="icon-location-dot"></p>
+          <h3>ivano-frankivsk</h3>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!----------------------->
+
+  <!--------  Main  ----------->
+  <main class="main">
+    <!------ AGENDA -------->
+    <section class="agenda block-agenda">
+      <div class="wrapper">
+        <h2 class="anim-items">AGENDA</h2>
+        <div class="agenda__cards ">
+          <div class="card-first anim-items">
+            <h3>first day</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li>Aliquam tincidunt mauris eu risus.</li>
+              <li>Vestibulum auctor dapibus neque.</li>
+              <li>Nunc dignissim risus id metus.Cras ornare tristique elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li>Aliquam tincidunt mauris eu risus.</li>
+              <li>Vestibulum auctor dapibus neque.</li>
+              <li>Nunc dignissim risus id metus.Cras ornare tristique elit.</li>
+            </ul>
+          </div>
+          <div class="card-second anim-items">
+            <h3>Second day</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li>Aliquam tincidunt mauris eu risus.</li>
+              <li>Vestibulum auctor dapibus neque.</li>
+              <li>Nunc dignissim risus id metus.Cras ornare tristique elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li>Aliquam tincidunt mauris eu risus.</li>
+              <li>Vestibulum auctor dapibus neque.</li>
+              <li>Nunc dignissim risus id metus.Cras ornare tristique elit.</li>
+            </ul>
+          </div>
+          <div class="card-party anim-items">
+            <h3>Party day</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit.</li>
+              <li>Aliquam tincidunt mauris eu risus.</li>
+              <li>Vestibulum auctor dapibus neque.</li>
+              <li>Nunc dignissim risus id metus. Cras ornare tristique elit.Cras ornare tristique elit.
+                Cras ornare tristique elit.Cras ornare tristique elit.Cras ornare tristique elit. Cras</li>
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras ornare tristique elit.Cras
+                ornare tristique elit. Cras</li>
+              <li>Aliquam tincidunt mauris eu risus.</li>
+              <li>Vestibulum auctor dapibus neque.</li>
+              <li>Nunc dignissim risus id metus. Cras ornare tristique elit. . Cras ornare tristique
+                elit.Cras ornare tristique elit. Cras</li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>
-    <!----------------------->
+    <!-------------------->
 
-    <!--------  Main  ----------->
-    <main class="main">
-      <div class="container">
-        <!------ AGENDA -------->
-        <section class="agenda">
-          <div class="agenda__title">AGENDA</div>
-          <div class="agenda__cards">
-            <div class="agenda-card1">
-              <div class="card-title">first day</div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Lorem ipsum dolor sit amet, consec-<br />tetuer adipiscing elit.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Aliquam tincidunt mauris eu risus.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Vestibulum auctor dapibus neque.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Nunc dignissim risus id metus.<br />Cras ornare tristique elit.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Lorem ipsum dolor sit amet, consec-<br />tetuer adipiscing elit.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Aliquam tincidunt mauris eu risus.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Vestibulum auctor dapibus neque.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Nunc dignissim risus id metus.<br />Cras ornare tristique elit.</p>
-              </div>
-            </div>
-            <div class="agenda-card2">
-              <div class="card-title">Second day</div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Lorem ipsum dolor sit amet, consec-<br />tetuer adipiscing elit.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Aliquam tincidunt mauris eu risus.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Vestibulum auctor dapibus neque.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Nunc dignissim risus id metus.<br />Cras ornare tristique elit.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Lorem ipsum dolor sit amet, consec-<br />tetuer adipiscing elit.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Aliquam tincidunt mauris eu risus.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Vestibulum auctor dapibus neque.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Nunc dignissim risus id metus.<br />Cras ornare tristique elit.</p>
-              </div>
-            </div>
-            <div class="agenda-card3">
-              <div class="card-title">Party day</div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet,
-                  consectetuer
-                  adipiscing elit.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Aliquam tincidunt mauris eu risus.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Vestibulum auctor dapibus neque.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p> Nunc dignissim risus id metus. Cras ornare tristique elit.Cras ornare tristique elit. Cras
-                  ornare tristique elit.Cras ornare tristique elit.Cras ornare tristique elit. Cras</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras ornare tristique elit.Cras
-                  ornare tristique elit. Cras</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Aliquam tincidunt mauris eu risus.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p>Vestibulum auctor dapibus neque.</p>
-              </div>
-              <div class="paragrafe">
-                <img src="./images/square.png" alt="square" class="img">
-                <p> Nunc dignissim risus id metus. Cras ornare tristique elit. . Cras ornare tristique
-                  elit.Cras ornare
-                  tristique elit. Cras</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!---------------------->
-
-        <!------ FORM -------->
-        <section class="form">
-          <div class="form__title">PARTICIPATION FORM</div>
+    <!----- FORM -------->
+    <section class="form block-form">
+      <div class="wrapper">
+        <h2 class="form__title anim-items">PARTICIPATION FORM</h2>
+        <form role="form">
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Your NAME" aria-label="Your NAME">
+              <input type="text" class="form-control" placeholder="Your NAME">
             </div>
-            <div class="col">
-              <input type="text" class="form-control" id="email" placeholder="EMAIL" aria-label="EMAIL">
+            <div class="col  has-error">
+              <input type="text" class="form-control" id="email" placeholder="EMAIL">
               <h6 id="result"></h6>
             </div>
             <div class="col">
-              <select class="form-select">
+              <select class="form-control form-select">
                 <option value="1">HOME OFFICE</option>
                 <option value="2">HOME</option>
                 <option value="3">OFFICE</option>
@@ -200,7 +137,7 @@
           </div>
           <div class="columns">
             <div class="first-column">
-              <div class="row column1">
+              <div class="row">
                 <div class="col">
                   <input type="text" class="form-control" placeholder="WHEN YOU ARRIVE?">
                 </div>
@@ -213,7 +150,7 @@
               </div>
             </div>
             <div class="secomd-column">
-              <div class="row column2">
+              <div class="row">
                 <div class="col">
                   <textarea class="textarea" placeholder="ADDITIONAL INFO"></textarea>
                 </div>
@@ -223,30 +160,34 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-------------------->
+        </form>
       </div>
-    </main>
-    <!------  END MAIN  --------->
-
-    <!------ Map -------->
-    <section class="map">
-      <div class="container">
-        <div class="map__title">how to find us</div>
-      </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5021.465117014101!2d24.700462683760456!3d48.91744633568713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1633446992185!5m2!1sru!2sua"
-        class="map"></iframe>
     </section>
     <!-------------------->
+  </main>
+  <!------  END MAIN  --------->
 
-    <!------ Footer -------->
-    <footer class="footer">
-      <div class="copyright">©2019 BEETROOT TEST TASK</div>
-    </footer>
-    <!-------------------->
+  <!------ Map -------->
+  <aside class="map block-map">
+    <div class="container">
+      <h2 class="map__title anim-items">how to find us</h2>
+    </div>
+    <!-- <div id="map"></div> -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1102.3715033138565!2d24.701635630824782!3d48.91737129355318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c13fcde3ed29%3A0xd3ab7f299ab2829f!2zNDjCsDU1JzAzLjMiTiAyNMKwNDInMDguNyJF!5e0!3m2!1sen!2sua!4v1633712839111!5m2!1sen!2sua"
+      class="map" loading="lazy"></iframe>
 
-  </div>
+  </aside>
+  <!-------------------->
+
+  <!------ Footer -------->
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="copyright anim-items">©2019 BEETROOT TEST TASK</div>
+    </div>
+  </footer>
+  <!-------------------->
+
   <!------ Scripts -------->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -254,7 +195,9 @@
   </script>
   <script src="js/script.js"></script>
   <script src="js/validationForm.js"></script>
-
+  <!-- <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ3oVNs2JMIkNi1YGkj1Q4EI9B2Q-ZVGo&callback=initMap&v=weekly"
+    async></script> -->
   <!-------------------->
 </body>
 
