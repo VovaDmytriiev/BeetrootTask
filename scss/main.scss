@@ -19,19 +19,18 @@
       margin-bottom : 91px;
 
       @media(max-width: 420px) {
-        font-size      : 60px;
-        // padding-left: 15px;
+        font-size: 60px;
       }
 
       @media(max-width: 360px) {
-        font-size: 45px;
+        font-size: 50px;
       }
     }
 
     &__cards {
       display        : flex;
       justify-content: center;
-      flex-wrap      : nowrap;
+
 
       @media(max-width: 1200px) {
         flex-wrap      : wrap;
@@ -258,11 +257,6 @@
       background-color: #ffffff;
       resize          : none;
       padding         : 33px;
-
-      @media (max-width: 767px) {
-        font-size: 14px;
-      }
-
     }
 
     .btn {
